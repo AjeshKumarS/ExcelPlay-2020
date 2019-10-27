@@ -1,0 +1,49 @@
+.sidebar {
+  .sidebar-background {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background: url('../../../assets/img/background.jpg') center center;
+  }
+}
+
+.sidebar:before {
+  opacity: 0.33;
+  background: #000000;
+}
+
+.sidebar:before,
+.sidebar:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.sidebar:after {
+  background: #9368e9;
+  background: -moz-linear-gradient(top, #9368e9 0%, #943bea 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #9368e9),
+    color-stop(100%, #943bea)
+  );
+  background: -webkit-linear-gradient(top, #9368e9 0%, #943bea 100%);
+  background: -o-linear-gradient(top, #9368e9 0%, #943bea 100%);
+  background: -ms-linear-gradient(top, #9368e9 0%, #943bea 100%);
+  background: linear-gradient(to bottom, #9368e9 0%, #943bea 100%);
+  background-size: 150% 150%;
+  opacity: 0.70;
+}

@@ -1,0 +1,52 @@
+.menu {
+  .nav {
+    margin-top: 20px;
+    float: none;
+    li {
+      display: block;
+      position: relative;
+      width: 100%;
+      i {
+        font-size: 28px;
+        float: left;
+        margin-right: 15px;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+      }
+      p {
+        line-height: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 0 0 45px;
+      }
+      a {
+        color: #ffffff;
+        margin: 5px 15px;
+        opacity: 0.86;
+        border-radius: 4px;
+        display: block;
+        padding: 10px 15px;
+        position: relative;
+      }
+    }
+    li.active {
+      a {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.23);
+      }
+    }
+    li:hover {
+      a {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .nav-mobile-menu {
+      display: none;
+    }
+  }
+}
